@@ -1,0 +1,32 @@
+Todo
+----
+
+Windows 7 stuff
+http://code.msdn.microsoft.com/WindowsAPICodePack
+
+ett projekt per bok
+en file per funktion
+ -synopsis
+ -platser
+ -objekt
+ -personer
+ -kapitel / text
+ -notes
+ -research bookmarks
+ 
+kapitelindelning
+-en fil per kapitel?
+-hur få ut en slutfil
+
+embed word eller annan
+export pdf
+rättstavning
+
+kapitel blir tabbed
+
+allt annat blir docked
+
+dokument Split vore nice
+
+även ha två eller fler kapitel öppna samtidigt bredvid varandra
+.

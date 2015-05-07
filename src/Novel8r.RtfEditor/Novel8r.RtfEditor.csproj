@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E99CCB40-8EE6-4615-9C4F-42DAB86BD749}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Novel8r.RtfEditor</RootNamespace>
+    <AssemblyName>Novel8r.RtfEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RichTextBoxPrintCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmFindReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindReplace.Designer.cs">
+      <DependentUpon>frmFindReplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graphics\binoc.ico" />
+    <Content Include="Graphics\bold.ico" />
+    <Content Include="Graphics\centre.ico" />
+    <Content Include="Graphics\copy.ico" />
+    <Content Include="Graphics\cut.ico" />
+    <Content Include="Graphics\delete.ico" />
+    <Content Include="Graphics\find_dc2.ico" />
+    <Content Include="Graphics\find_doc.ico" />
+    <Content Include="Graphics\font.ico" />
+    <Content Include="Graphics\font_big.ico" />
+    <Content Include="Graphics\font_sml.ico" />
+    <Content Include="Graphics\font_wid.ico" />
+    <Content Include="Graphics\help.ico" />
+    <Content Include="Graphics\help_ptr.ico" />
+    <Content Include="Graphics\italic.ico" />
+    <Content Include="Graphics\justify.ico" />
+    <Content Include="Graphics\left.ico" />
+    <Content Include="Graphics\lst2icon.ico" />
+    <Content Include="Graphics\mail.ico" />
+    <Content Include="Graphics\mail2.ico" />
+    <Content Include="Graphics\new.ico" />
+    <Content Include="Graphics\open.ico" />
+    <Content Include="Graphics\paste.ico" />
+    <Content Include="Graphics\print.ico" />
+    <Content Include="Graphics\print2.ico" />
+    <Content Include="Graphics\redo.ico" />
+    <Content Include="Graphics\refresh.ico" />
+    <Content Include="Graphics\right.ico" />
+    <Content Include="Graphics\save.ico" />
+    <Content Include="Graphics\toupper.ico" />
+    <Content Include="Graphics\underlne.ico" />
+    <Content Include="Graphics\undo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmFindReplace.resx">
+      <DependentUpon>frmFindReplace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

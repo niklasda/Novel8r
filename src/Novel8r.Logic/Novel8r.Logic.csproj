@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75234062-B98D-4280-AA4C-BECC885572B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Novel8r.Logic</RootNamespace>
+    <AssemblyName>Novel8r.Logic</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA1020;-Microsoft.Design#CA1032;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1305;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Performance#CA1822</CodeAnalysisRules>
+    <CodeContractsEnableRuntimeChecking>False</CodeContractsEnableRuntimeChecking>
+    <CodeContractsCustomRewriterAssembly>
+    </CodeContractsCustomRewriterAssembly>
+    <CodeContractsCustomRewriterClass>
+    </CodeContractsCustomRewriterClass>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsBuildReferenceAssembly>False</CodeContractsBuildReferenceAssembly>
+    <CodeContractsNonNullObligations>True</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>True</CodeContractsBoundsObligations>
+    <CodeContractsLibPaths>
+    </CodeContractsLibPaths>
+    <CodeContractsPlatformPath>
+    </CodeContractsPlatformPath>
+    <CodeContractsExtraAnalysisOptions>
+    </CodeContractsExtraAnalysisOptions>
+    <CodeContractsBaseLineFile>
+    </CodeContractsBaseLineFile>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ExceptionMessageBox, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Microsoft.ExceptionMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition, Version=2009.1.23.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Novel8r\Properties\AssemblyCommonInfo.cs">
+      <Link>Properties\AssemblyCommonInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\ExportFormats.cs" />
+    <Compile Include="Common\IndexActions.cs" />
+    <Compile Include="Common\ResourceReader.cs" />
+    <Compile Include="Common\SearchAreas.cs" />
+    <Compile Include="Common\ServerVersionMetaData.cs" />
+    <Compile Include="Connection\SettingsIO.cs" />
+    <Compile Include="DomainModel\Draggable\DraggableTable.cs" />
+    <Compile Include="DomainModel\Project\Novel8rProject.cs" />
+    <Compile Include="DomainModel\Project\Sql8rProjectFile.cs" />
+    <Compile Include="DomainModel\Project\Sql8rProjectFolder.cs" />
+    <Compile Include="DomainModel\Search\SearchHit.cs" />
+    <Compile Include="DomainModel\Sql8rIndex.cs" />
+    <Compile Include="DomainModel\Sql8rAggregate.cs" />
+    <Compile Include="DomainModel\Sql8rObject.cs" />
+    <Compile Include="DomainModel\Sql8rTrigger.cs" />
+    <Compile Include="DomainModel\Sql8rFunction.cs" />
+    <Compile Include="DomainModel\Sql8rProcedure.cs" />
+    <Compile Include="DomainModel\Sql8rColumn.cs" />
+    <Compile Include="DomainModel\Sql8rDatabase.cs" />
+    <Compile Include="DomainModel\Query.cs" />
+    <Compile Include="DomainModel\Sql8rServer.cs" />
+    <Compile Include="DomainModel\Sql8rTable.cs" />
+    <Compile Include="DomainModel\Sql8rView.cs" />
+    <Compile Include="DomainModel\Templates\Template.cs" />
+    <Compile Include="Exceptions\SQL8rException.cs" />
+    <Compile Include="Factories\CodeManagerFactory.cs" />
+    <Compile Include="Factories\DatabaseManagerFactory.cs" />
+    <Compile Include="Factories\DialogFactory.cs" />
+    <Compile Include="Factories\PerformanceManagerFactory.cs" />
+    <Compile Include="Factories\SearchManagerFactory.cs" />
+    <Compile Include="Factories\ServerVersionId.cs" />
+    <Compile Include="Factories\TemplateManagerFactory.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Handlers\DomainSearchHandler.cs" />
+    <Compile Include="Helpers\DialogHelper.cs" />
+    <Compile Include="Helpers\ElevationHelper.cs" />
+    <Compile Include="Interfaces\IServerVersionMetaData.cs" />
+    <Compile Include="Interfaces\IViewPresenter.cs" />
+    <Compile Include="Interfaces\IChildPresenter.cs" />
+    <Compile Include="Interfaces\IPerformanceManager.cs" />
+    <Compile Include="Interfaces\ICodeManager.cs" />
+    <Compile Include="Interfaces\IColumnedObject.cs" />
+    <Compile Include="Interfaces\IProjectManager.cs" />
+    <Compile Include="Interfaces\ISearchManager.cs" />
+    <Compile Include="Interfaces\ISnippet.cs" />
+    <Compile Include="Interfaces\ITemplateManager.cs" />
+    <Compile Include="Interfaces\IDatabaseManager.cs" />
+    <Compile Include="Connection\ServerConnectionSettings.cs" />
+    <Compile Include="Interfaces\IPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,40 @@
+
+General
+-
+Splash bild
+Ribbonikon
+Exe-ikon
+About bild
+filnetype association
+Fullscreen mode, whiteroom, darkroom
+
+Ribbon
+-
+Remove Novel, sparas ej
+New novel hamnar inte i known novels, bara opened novels
+
+Edit Server group name
+Connect bort
+Server, Database RibbonGroup
+Import project ska bort
+
+
+Solution Explorer
+-
+Add file/folder ikoner
+file ikoner
+
+
+Search
+-
+Column names <none>.<all>
+Search area bort
+grupper resultat på filename
+inte implementerad
+
+
+Editor
+-
+Line numbers
+Tab names: better and unique
+one window per file

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF831C34-F6B8-4DA6-BC72-7C3C1B81DC83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Novel8r.WinForms</RootNamespace>
+    <AssemblyName>Novel8r.WinForms</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>-Microsoft.Design#CA1020;-Microsoft.Design#CA1051;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA1300;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1822;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Alsing.SyntaxBox, Version=1.4.10.34583, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Alsing.SyntaxBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Shared.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.Misc.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDock.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinDock.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinEditors.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.DocumentExport.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinGrid.DocumentExport.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinGrid.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinListView.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinListView.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinPrintPreviewDialog.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinStatusBar.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabbedMdi.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinTabbedMdi.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinToolbars.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTree.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.UltraWinTree.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.3, Version=8.3.20083.2039, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SQL8r\src\refbin\Infragistics2.Win.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Novel8r\Properties\AssemblyCommonInfo.cs">
+      <Link>Properties\AssemblyCommonInfo.cs</Link>
+    </Compile>
+    <Compile Include="Factories\PresenterFactory.cs" />
+    <Compile Include="NodeTypes\ColumnNode.cs" />
+    <Compile Include="NodeTypes\ColumnsNode.cs" />
+    <Compile Include="NodeTypes\DatabaseNode.cs" />
+    <Compile Include="NodeTypes\DatabasesNode.cs" />
+    <Compile Include="NodeTypes\Interfaces\IFolderNode.cs" />
+    <Compile Include="NodeTypes\Interfaces\IHaveParentNode.cs" />
+    <Compile Include="NodeTypes\Interfaces\ISystemObjectNode.cs" />
+    <Compile Include="NodeTypes\Project\FolderNode.cs" />
+    <Compile Include="NodeTypes\Project\ProjectNode.cs" />
+    <Compile Include="NodeTypes\Project\FileNode.cs" />
+    <Compile Include="NodeTypes\ServerNode.cs" />
+    <Compile Include="NodeTypes\TableNode.cs" />
+    <Compile Include="NodeTypes\TablesNode.cs" />
+    <Compile Include="NodeTypes\ViewNode.cs" />
+    <Compile Include="NodeTypes\ViewsNode.cs" />
+    <Compile Include="Presenters\AboutPresenter.cs" />
+    <Compile Include="Presenters\DockedChildren\RibbonEventHandlers.cs" />
+    <Compile Include="Presenters\MdiChildren\EditorRtfPresenter.cs" />
+    <Compile Include="Presenters\UpdatesPresenter.cs" />
+    <Compile Include="Presenters\SplashPresenter.cs" />
+    <Compile Include="Presenters\CustomDialogs\ModifiedFilesPresenter.cs" />
+    <Compile Include="Presenters\DockedChildren\ProjectPresenter.cs" />
+    <Compile Include="Presenters\DockedChildren\RibbonPresenter.cs" />
+    <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Presenters\MdiChildren\EditorWithDataGridPresenter.cs" />
+    <Compile Include="Presenters\MdiChildren\SearchPresenter.cs" />
+    <Compile Include="Presenters\MdiChildren\EditorPresenter.cs" />
+    <Compile Include="Views\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\CheckBoxToolStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Controls\MyEditViewControl.cs">
+    </Compile>
+    <Compile Include="Views\Controls\MySyntaxBoxControl.cs">
+    </Compile>
+    <Compile Include="Views\CustomDialogs\ModifiedFilesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CustomDialogs\ModifiedFilesDialog.Designer.cs">
+      <DependentUpon>ModifiedFilesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MdiChildren\EditorRtfForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MdiChildren\EditorRtfForm.Designer.cs">
+      <DependentUpon>EditorRtfForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MdiChildren\EditorWithDataGridChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MdiChildren\EditorWithDataGridChildForm.Designer.cs">
+      <DependentUpon>EditorWithDataGridChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestForms\NiklasTestForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TestForms\NiklasTestForm1.Designer.cs">
+      <DependentUpon>NiklasTestForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MdiChildren\SearchChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MdiChildren\SearchChildForm.Designer.cs">
+      <DependentUpon>SearchChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Views\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CustomDialogs\ModifiedFilesDialog.resx">
+      <DependentUpon>ModifiedFilesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MdiChildren\EditorRtfForm.resx">
+      <DependentUpon>EditorRtfForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MdiChildren\EditorWithDataGridChildForm.resx">
+      <DependentUpon>EditorWithDataGridChildForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TestForms\NiklasTestForm1.resx">
+      <DependentUpon>NiklasTestForm1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MdiChildren\SearchChildForm.resx">
+      <DependentUpon>SearchChildForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.png" />
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocumentHS.png" />
+    <None Include="Resources\Aiga_escalator_up_smaller.png" />
+    <Content Include="Resources\ExcelRip.png" />
+    <None Include="Resources\NewFolderHS.png" />
+    <None Include="Resources\NewDocumentHS.png" />
+    <None Include="Resources\xml.png" />
+    <None Include="Resources\flash.png" />
+    <None Include="Resources\image2.png" />
+    <None Include="Resources\escalator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novel8r.Logic\Novel8r.Logic.csproj">
+      <Project>{75234062-B98D-4280-AA4C-BECC885572B2}</Project>
+      <Name>Novel8r.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Novel8r.ProjectManager\Novel8r.ProjectManager.csproj">
+      <Project>{E6F8AAC6-DAE8-4B7B-9B66-19E2ACA82A76}</Project>
+      <Name>Novel8r.ProjectManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Novel8r.RtfEditor\Novel8r.RtfEditor.csproj">
+      <Project>{E99CCB40-8EE6-4615-9C4F-42DAB86BD749}</Project>
+      <Name>Novel8r.RtfEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SyntaxFiles\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
